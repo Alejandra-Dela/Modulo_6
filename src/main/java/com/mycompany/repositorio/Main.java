@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
+        String ejemploCommit = "var";
+        
         // Crear Doctor
         System.out.println("Ingrese los datos del Doctor:");
         System.out.print("Nombre: ");

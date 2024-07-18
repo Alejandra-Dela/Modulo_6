@@ -2,18 +2,15 @@ package com.mycompany.repositorio;
 
 import com.mycompany.repositorio.Main;
 
-// Superclase abstracta Persona
 abstract class Persona {
     private String nombre;
     private int edad;
     
-    // Constructor
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
     
-    // Métodos getter y setter
     public String getNombre() {
         return nombre;
     }
@@ -30,6 +27,5 @@ abstract class Persona {
         this.edad = edad;
     }
     
-    // Método abstracto
     public abstract void presentarse();
 }

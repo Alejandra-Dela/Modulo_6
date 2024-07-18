@@ -2,12 +2,10 @@ package com.mycompany.repositorio;
 
 import java.util.Scanner;
 
-// Clase principal para demostrar el funcionamiento
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Crear Doctor
         System.out.println("Ingrese los datos del Doctor:");
         System.out.print("Nombre: ");
         String nombreDoctor = scanner.nextLine();
@@ -19,7 +17,6 @@ public class Main {
         
         Doctor doctor = new Doctor(nombreDoctor, edadDoctor, especialidadDoctor);
         
-        // Crear Deportista
         System.out.println("\nIngrese los datos del Deportista:");
         System.out.print("Nombre: ");
         String nombreDeportista = scanner.nextLine();
@@ -31,7 +28,6 @@ public class Main {
         
         Deportista deportista = new Deportista(nombreDeportista, edadDeportista, deporteDeportista);
         
-        // Mostrar información
         System.out.println("\nInformación ingresada:");
         doctor.presentarse();
         doctor.realizarDiagnostico();
